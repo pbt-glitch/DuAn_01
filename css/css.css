@@ -1,0 +1,154 @@
+.banner-wrapper {
+    height: 300px; /* Chiều cao tối đa của banner */
+  }
+  
+  .object-fit-cover {
+    object-fit: cover; /* Cắt hình ảnh để phù hợp với khung */
+  }
+  
+/* Định dạng sản phẩm */
+/* Tổng quan cho các sản phẩm */
+.product {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hình ảnh sản phẩm */
+.product img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Nội dung sản phẩm */
+.product .card-body {
+  padding: 15px;
+}
+
+.product .card-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.product .card-text {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Nút thêm vào giỏ hàng */
+.product button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+/* Banner */
+.banner-container {
+  margin: 20px 0;
+}
+
+.banner-wrapper img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Định dạng danh mục */
+.nav .nav-item .nav-link {
+  font-size: 16px;
+  color: #333;
+}
+
+.nav .nav-item .nav-link:hover {
+  color: #007bff;
+  text-decoration: underline; 
+}
+
+/*  */
+.footer-clean {
+  padding: 50px 0;
+  background-color: #000000 !important; /* Màu nền đen, sử dụng !important để tránh bị ghi đè */
+  color: #f8f9fa;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+.footer-clean h3 {
+  margin-top: 0;
+  margin-bottom: 12px; /* Khoảng cách dưới tiêu đề */
+  font-weight: bold;
+  font-size: 18px; /* Kích thước tiêu đề */
+  color: #ffc107; /* Màu vàng nổi bật */
+}
+
+.footer-clean ul {
+  padding: 0;
+  list-style: none; /* Bỏ dấu chấm đầu dòng */
+}
+
+.footer-clean ul li {
+  margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+.footer-clean ul li a {
+  color: #f8f9fa; /* Màu liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+  transition: color 0.3s; /* Hiệu ứng màu */
+}
+
+.footer-clean ul li a:hover {
+  color: #ffc107; /* Màu vàng khi hover */
+}
+
+/* Mạng xã hội */
+.footer-clean .item.social {
+  text-align: center; /* Căn giữa các biểu tượng */
+}
+
+.footer-clean .item.social a {
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #f8f9fa; /* Màu mặc định */
+  margin: 0 8px; /* Khoảng cách giữa các biểu tượng */
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s; /* Hiệu ứng hover */
+}
+
+.footer-clean .item.social a:hover {
+  color: #ffc107; /* Màu vàng khi hover */
+  transform: scale(1.2); /* Phóng to nhẹ khi hover */
+}
+
+/* Bản quyền */
+.footer-clean .copyright {
+  margin-top: 15px; /* Khoảng cách phía trên */
+  font-size: 13px; /* Chữ nhỏ hơn */
+  color: #ced4da; /* Màu chữ nhẹ hơn */
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .footer-clean .item {
+    text-align: center; /* Căn giữa các cột */
+    margin-bottom: 20px; /* Khoảng cách giữa các cột */
+  }
+  .footer-clean .item.social {
+    margin-top: 20px; /* Tách riêng mạng xã hội */
+  }
+}
